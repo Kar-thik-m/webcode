@@ -18,7 +18,6 @@ async function makeup() {
   var link = `https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${se}`
   var int = await fetch(link);
   var int1 = await int.json();
-  console.log(int1);
   var inner ="";
 
  for(var i=0;i<int1.length;i++){
